@@ -87,50 +87,32 @@
       chdir: "/opt/mythic"
     become: yes
 
-  - name: Install HTTP
-    ansible.builtin.command: "/opt/mythic/mythic-cli install github https://github.com/MythicC2Profiles/http -f"
+  - name: Install HTTPX
+    ansible.builtin.command: "/opt/mythic/mythic-cli install github https://github.com/MythicC2Profiles/httpx -f"
     become: yes
     args:
       chdir: "/opt/mythic"
 
-  - name: Install Poseidon
-    ansible.builtin.command: "/opt/mythic/mythic-cli install github https://github.com/MythicAgents/poseidon -f"
+  - name: Install SMB
+    ansible.builtin.command: "/opt/mythic/mythic-cli install github https://github.com/MythicC2Profiles/smb -f"
     become: yes
     args:
       chdir: "/opt/mythic"
 
-  - name: Install Apfell
-    ansible.builtin.command: "/opt/mythic/mythic-cli install github https://github.com/MythicAgents/apfell -f"
+  - name: Install TCP
+    ansible.builtin.command: "/opt/mythic/mythic-cli install github https://github.com/MythicC2Profiles/tcp -f"
     become: yes
     args:
       chdir: "/opt/mythic"
 
-  - name: Install Thanatos
-    ansible.builtin.command: "/opt/mythic/mythic-cli install github https://github.com/MythicAgents/thanatos -f"
+  - name: Install Xenon
+    ansible.builtin.command: "/opt/mythic/mythic-cli install github https://github.com/MythicAgents/Xenon -f"
     become: yes
     args:
       chdir: "/opt/mythic"
 
-  - name: Start HTTP
-    ansible.builtin.command: "/opt/mythic/mythic-cli start http"
-    become: yes
-    args:
-      chdir: "/opt/mythic"
-
-  - name: Start Poseidon
-    ansible.builtin.command: "/opt/mythic/mythic-cli start poseidon"
-    become: yes
-    args:
-      chdir: "/opt/mythic"
-
-  - name: Start Apfell
-    ansible.builtin.command: "/opt/mythic/mythic-cli start apfell"
-    become: yes
-    args:
-      chdir: "/opt/mythic"
-
-  - name: Start Thanatos
-    ansible.builtin.command: "/opt/mythic/mythic-cli start thanatos"
+  - name: Install Forge
+    ansible.builtin.command: "/opt/mythic/mythic-cli install github https://github.com/MythicAgents/forge -f"
     become: yes
     args:
       chdir: "/opt/mythic"

@@ -3,8 +3,8 @@ dependencies: []
 
 galaxy_info:
   role_name: ludus_mythic_teamserver
-  author: 0xRedpoll
-  description: An Ansible Role that installs a Mythic Teamserver
+  author: c0rnbread
+  description: An Ansible Role that installs Mythic with Xenon
   company: ''
   license: GPLv3
   min_ansible_version: "2.10"
